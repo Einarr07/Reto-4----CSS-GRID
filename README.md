@@ -5,6 +5,7 @@
 ![image](https://user-images.githubusercontent.com/96399138/218319457-434dfc10-73de-491d-95ec-da5821660a16.png)
 
 
+
 <hr>
 
 <h2> Diseño de pagina para tableta </h2>
