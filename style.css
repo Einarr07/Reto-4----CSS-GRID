@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    gap: 20px;
+    min-height: 100%;
+    grid-template-areas: 
+        "cabesera"
+        "navegar"
+        "principal"
+        "pie";
+    font-size: 1.2rem;
+}
+
+header{
+    grid-area: cabesera;
+    background-color: greenyellow;
+}
+button{
+    display: inline-block;
+    color: white;
+    background-color: rgb(21, 196, 196);
+    font-size: 20px;
+    border-radius: 8px;
+}
+nav{
+    grid-area: navegar;
+    background-color: orange;
+}
+
+main{
+    grid-area: principal;
+    background-color: aqua;
+}
+
+footer{
+    grid-area: pie;
+    background-color: gray;
+}
+
+img{
+    width: 300px;
+    height: 150px;
+}
+
+.comida1{
+    justify-content: right;
+}
+
+@media (min-width: 600px) {
+    body{
+        grid-template: 
+        "cabesera cabesera" 225px
+        "navegar principal" auto
+        "pie     pie"      auto / 
+        310px    auto;
+    }
+}
+
+@media (min-width: 900px) {
+    body{
+        grid-template: 
+        "cabesera"  
+        "principal" 
+        "navegar"  
+        "pie";
+    }
+}
